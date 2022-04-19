@@ -1,6 +1,5 @@
 /* ------------------------------- 1. Global Styles -------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
-/* --------------- 1.1 CSS reset ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400&display=swap');/* --------------- 1.1 CSS reset ------------------- */
 
 * {
     box-sizing: border-box;
@@ -121,6 +120,8 @@ button {
 
 .header___hero-section-paragraph {
     margin: 0.5em;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .header___cta-button {
