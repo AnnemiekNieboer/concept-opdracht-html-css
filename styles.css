@@ -122,6 +122,7 @@ button {
     margin: 0.5em;
     font-size: 18px;
     font-weight: 300;
+    text-align: center;
 }
 
 .header___cta-button {
@@ -146,3 +147,5 @@ button {
 .squiggle-line {
     height: 70%;
 }
+
+/* --------------- 4.3 Main-About-section ------------------- */
