@@ -1,6 +1,5 @@
 /* ------------------------------- 1. Global Styles -------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400&display=swap');/* --------------- 1.1 CSS reset ------------------- */
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;700&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,7 +13,9 @@
     --main-button-color: #ED4385;
     --main-font-color-light: white;
     --main-font-color-dark: #0C0C0C;
-    --main-shadow-color: #451ba2;
+    --main-background-color-darker: #F3F6F9;
+    --main-shadow-focus-color: #451ba2;
+    --main-shadow-color: #a8a8a8;
     --main-gradient-color: linear-gradient(to right, rgb(74, 73, 231), rgb(87, 34, 205));
 }
 
@@ -48,6 +49,7 @@ header,
 /* ------------------------------- 2. Typography ----------------------------------- */
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 h1,
 h2 {
@@ -69,6 +71,22 @@ button {
     font-family: inherit;
 }
 
+h2 {
+    text-transform: capitalize;
+    margin: 10px 0 10px 0;
+}
+
+.content-article--link {
+    display: block;
+    margin: 40px 40px 40px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 .main__inner-container a:link{
@@ -76,7 +94,7 @@ button {
 }
 
 .main__inner-container a:visited{
-    color: var(--main-shadow-color);
+    color: var(--main-shadow-focus-color);
 }
 
 .main__outer-container {
@@ -136,7 +154,7 @@ button {
 /* --------------- 4.2 Header-Hero-section ------------------- */
 
 .header___inner-container {
-    max-width: 1200;
+    max-width: 1200px;
 }
 
 .header___hero-section {
@@ -169,7 +187,7 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 12px;
-    box-shadow: 0 8px 10px var(--main-shadow-color);
+    box-shadow: 0 8px 10px var(--main-shadow-focus-color);
 }
 
 .header___squiggle-line {
@@ -217,6 +235,7 @@ button {
     justify-content: center;
     align-items: center;
     max-width: 1200px;
+    background-color: var(--main-background-color-darker) ;
 }
 
 .main__content-article {
@@ -225,21 +244,47 @@ button {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    min-height: 500px;
 }
 
 .main__content-article--block {
     flex-basis: 100px;
-    margin: 200px 80px 80px 50px;
+    margin: 110px 140px 80px 50px;
+    padding-right: 100px;
     flex-grow: 1;
-
 }
 
-.main__content-article--image {
-    padding: 60px 25px 60px 0px;
-    flex-shrink: 0;
+.content-article__block2 {
+    margin: 110px 50px 80px 180px;
 }
 
 .main__content-article--image > img {
     width: 600px;
     height: auto;
+    box-shadow: 0 20px 30px -10px var(--main-shadow-color);
 }
+
+.main__content-article--image {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.content-article__image1 {
+    top: 25px;
+    margin-right: 10px;
+}
+
+.content-article__image2 {
+    padding-left: 10px;
+    order: -1;
+}
+
+.content-article__image3 {
+    top: -30px;
+    margin-right: 10px;
+}
+
+.main__content-article--squiggle-line {
+    margin: 20px 0 40px 0;
+}
+
