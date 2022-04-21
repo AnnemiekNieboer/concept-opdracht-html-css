@@ -288,3 +288,15 @@ h2 {
     margin: 20px 0 40px 0;
 }
 
+/* --------------- 4.4 Main-Services------------------- */
+
+.main__services--inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services--block {
+    flex-basis: 200px;
+}
