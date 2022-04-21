@@ -13,9 +13,11 @@
     --main-button-color: #ED4385;
     --main-font-color-light: white;
     --main-font-color-dark: #0C0C0C;
+    --main-font-color-medium:#7A7A7A;
     --main-background-color-darker: #F3F6F9;
     --main-shadow-focus-color: #451ba2;
     --main-shadow-color: #a8a8a8;
+    --main-shadow-color-light: #d7d5d5;
     --main-gradient-color: linear-gradient(to right, rgb(74, 73, 231), rgb(87, 34, 205));
 }
 
@@ -28,7 +30,8 @@ header,
 
 .header___inner-container,
 .main__inner-container,
-.main__about-section {
+.main__about-section,
+.main__services--inner-container {
     border: 3px solid greenyellow;
 }
 
@@ -52,7 +55,8 @@ body {
     font-weight: 400;
 }
 h1,
-h2 {
+h2,
+h4 {
     font-family: 'Merriweather', serif;
 }
 
@@ -76,6 +80,11 @@ h2 {
     margin: 10px 0 10px 0;
 }
 
+h4 {
+    color: var(--main-focus-color);
+    font-size: 18px;
+}
+
 .content-article--link {
     display: block;
     margin: 40px 40px 40px 0;
@@ -85,6 +94,12 @@ h2 {
     font-weight: 700;
     font-size: 11px;
     letter-spacing: 1px;
+}
+
+.services__block--paragraph {
+    color: var(--main-font-color-medium);
+    margin-top: 2em;
+    font-size: 12px;
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
@@ -295,8 +310,27 @@ h2 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 2em;
+    padding: 50px 100px 50px 100px;
 }
 
 .services--block {
-    flex-basis: 200px;
+    flex-basis: 300px;
+    border: 1px solid var(--main-focus-color);
+    flex-grow: 0;
+    flex-shrink: 1;
+    /*padding: 30px 30px 30px 30px;*/
+    padding: 2em 2em 2em 2em;
+    box-shadow: 0 20px 30px -10px var(--main-shadow-color-light);
 }
+
+.services--block > img {
+    width: 4em;
+    margin: 1em 1em 0.5em 0;
+}
+
+.services__inner-container--row1 {
+    flex-shrink: 0;
+}
+
