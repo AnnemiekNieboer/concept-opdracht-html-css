@@ -334,3 +334,45 @@ h4 {
     flex-shrink: 0;
 }
 
+/* --------------- 4.5 Footer-Form------------------- */
+
+#footer__outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /*max-width: 1200px;*/
+    background-color: var(--main-focus-color);
+}
+
+.footer__inner-container {
+    max-width: 1200px;
+    flex-basis: 600px;
+}
+
+.footer__form,
+.footer__inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------- 4.5 Footer-Copyright-section------------------- */
+
+.footer__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--main-font-color-dark);
+    color: var(--main-font-color-light);
+    height: 2em;
+}
+
+.footer__copyright-paragraph {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
