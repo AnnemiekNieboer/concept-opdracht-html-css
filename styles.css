@@ -102,6 +102,14 @@ h4 {
     font-size: 12px;
 }
 
+.footer__copyright-paragraph {
+    text-align: center;
+    color: var(--main-font-color-light);
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 .main__inner-container a:link{
@@ -118,6 +126,19 @@ h4 {
     justify-content: center;
     align-items: stretch;
     width: 100%;
+}
+
+.main__cta-button {
+    background-color: var(--main-button-color);
+    padding: 15px 30px;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    color: var(--main-font-color-light);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0 8px 10px var(--main-shadow-focus-color);
 }
 
 /* ------------------------------- 4. Areas --------------------------------------- */
@@ -191,18 +212,7 @@ h4 {
     text-align: center;
 }
 
-.header___cta-button {
-    background-color: var(--main-button-color);
-    padding: 15px 30px;
-    margin: 20px;
-    border: none;
-    border-radius: 30px;
-    color: var(--main-font-color-light);
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 12px;
-    box-shadow: 0 8px 10px var(--main-shadow-focus-color);
-}
+
 
 .header___squiggle-line {
     display: flex;
@@ -358,6 +368,10 @@ h4 {
     align-items: center;
 }
 
+.main__cta-button--footer {
+    padding: 15px 60px;
+}
+
 /* --------------- 4.5 Footer-Copyright-section------------------- */
 
 .footer__copyright {
@@ -366,13 +380,6 @@ h4 {
     justify-content: center;
     width: 100%;
     background-color: var(--main-font-color-dark);
-    color: var(--main-font-color-light);
     height: 2em;
 }
 
-.footer__copyright-paragraph {
-    text-align: center;
-    font-size: 10px;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
