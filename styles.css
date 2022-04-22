@@ -246,12 +246,11 @@ textarea {
     text-align: center;
 }
 
-
-
 .header___squiggle-line {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 1em;
 }
 
 .squiggle-line {
