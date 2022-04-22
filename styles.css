@@ -23,33 +23,33 @@
 
 /* --------------- 1.3 Setup Borders (temporary) ------------------- */
 
-header,
-.main__outer-container {
-    border: 3px solid red;
-}
+/*header,*/
+/*.main__outer-container {*/
+/*    border: 3px solid red;*/
+/*}*/
 
-.header___inner-container,
-.main__inner-container,
-.main__about-section,
-.main__services--inner-container,
-.footer__inner-container,
-.footer__form--form,
-.footer__form {
-    border: 3px solid greenyellow;
-}
+/*.header___inner-container,*/
+/*.main__inner-container,*/
+/*.main__about-section,*/
+/*.main__services--inner-container,*/
+/*.footer__inner-container,*/
+/*.footer__form--form,*/
+/*.footer__form {*/
+/*    border: 3px solid greenyellow;*/
+/*}*/
 
-.navigation,
-.header___hero-section,
-.header___squiggle-line,
-.main__paragraph--about-section,
-.main__paragraph--cta-line,
-#main__content-section {
-    border: 3px solid yellow;
-}
+/*.navigation,*/
+/*.header___hero-section,*/
+/*.header___squiggle-line,*/
+/*.main__paragraph--about-section,*/
+/*.main__paragraph--cta-line,*/
+/*#main__content-section {*/
+/*    border: 3px solid yellow;*/
+/*}*/
 
-.main__content-article {
-    border: 3px solid blue;
-}
+/*.main__content-article {*/
+/*    border: 3px solid blue;*/
+/*}*/
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -364,7 +364,6 @@ textarea {
     border: 1px solid var(--main-focus-color);
     flex-grow: 0;
     flex-shrink: 1;
-    /*padding: 30px 30px 30px 30px;*/
     padding: 2em 2em 2em 2em;
     box-shadow: 0 20px 30px -10px var(--main-shadow-color-light);
 }
@@ -405,6 +404,7 @@ textarea {
 
 .footer__form {
     width: 60%;
+    max-width: 700px;
     margin-top: 2em;
     margin-bottom: 2em;
 }
