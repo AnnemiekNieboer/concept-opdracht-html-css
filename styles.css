@@ -23,33 +23,33 @@
 
 /* --------------- 1.3 Setup Borders (temporary) ------------------- */
 
-/*header,*/
-/*.main__outer-container {*/
-/*    border: 3px solid red;*/
-/*}*/
+header,
+.main__outer-container {
+    border: 3px solid red;
+}
 
-/*.header___inner-container,*/
-/*.main__inner-container,*/
-/*.main__about-section,*/
-/*.main__services--inner-container,*/
-/*.footer__inner-container,*/
-/*.footer__form--form,*/
-/*.footer__form {*/
-/*    border: 3px solid greenyellow;*/
-/*}*/
+.header___inner-container,
+.main__inner-container,
+.main__about-section,
+.main__services--inner-container,
+.footer__inner-container,
+.footer__form--form,
+.footer__form {
+    border: 3px solid greenyellow;
+}
 
-/*.navigation,*/
-/*.header___hero-section,*/
-/*.header___squiggle-line,*/
-/*.main__paragraph--about-section,*/
-/*.main__paragraph--cta-line,*/
-/*#main__content-section {*/
-/*    border: 3px solid yellow;*/
-/*}*/
+.navigation,
+.header___hero-section,
+.header___squiggle-line,
+.main__paragraph--about-section,
+.main__paragraph--cta-line,
+#main__content-section {
+    border: 3px solid yellow;
+}
 
-/*.main__content-article {*/
-/*    border: 3px solid blue;*/
-/*}*/
+.main__content-article {
+    border: 3px solid blue;
+}
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -194,21 +194,40 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 1200px;
+    /*flex-basis: 1200px;*/
+    flex-basis: 142vh;
+}
+
+/*hoogte header*/
+@media screen and (min-width: 768px) {
+    .header___inner-container {
+        flex-basis: 1200px;
+    }
 }
 
 /* --------------- 4.2 Header-Navigation ------------------- */
 .navigation {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /*align-self: flex-end;*/
 }
 
 .navigation___list {
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
     gap: 2em;
     margin: 1em 2em;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation___list {
+        justify-content: flex-end;
+    }
 }
 
 .navigation___link {
@@ -233,7 +252,13 @@ textarea {
     justify-content: center;
     align-items: center;
     margin: 2em;
-    width: 60%;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .header___hero-section {
+        width: 60%;
+    }
 }
 
 .header___hero-section > h1 {
@@ -241,10 +266,17 @@ textarea {
 }
 
 .header___hero-section-paragraph {
-    margin: 0.5em;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 300;
     text-align: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .header___hero-section-paragraph {
+        margin: 0.5em;
+        font-size: 18px;
+    }
 }
 
 .header___squiggle-line {
