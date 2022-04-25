@@ -92,6 +92,7 @@ h3 {
     color: var(--main-font-color-light);
     font-size: 2em;
     margin: 0.5em;
+    text-align: center;
 }
 
 h4 {
