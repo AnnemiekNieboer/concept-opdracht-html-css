@@ -525,12 +525,20 @@ textarea {
     justify-content: center;
     align-items: center;
     background-image: var(--main-gradient-color);
+    width: 100%;
 }
 
 .footer__inner-container {
-    max-width: 1200px;
-    min-width: 80%;
-    flex-basis: 600px;
+    /*width: 1200px;*/
+    /*flex-basis: 600px;*/
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px){
+    .footer__inner-container {
+        width: 1200px;
+        flex-basis: 600px;
+    }
 }
 
 .footer__form,
@@ -543,10 +551,18 @@ textarea {
 }
 
 .footer__form {
-    width: 60%;
-    max-width: 700px;
+    /*width: 60%;*/
+    /*max-width: 700px;*/
+    width: 95%;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+@media screen and (min-width: 1200px){
+    .footer__form {
+        width: 60%;
+        max-width: 700px;
+    }
 }
 
 .footer__form--form {
