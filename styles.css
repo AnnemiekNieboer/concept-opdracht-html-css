@@ -210,12 +210,13 @@ h4 {
 
 .services__block--paragraph {
     color: var(--main-font-color-medium);
-    margin-top: 2em;
-    font-size: 12px;
+    margin-top: 5em;
+    font-size: 13px;
 }
 
 @media screen and (min-width: 1200px){
     .services__block--paragraph {
+        margin-top: 2em;
         font-size: 12px;
     }
 }
@@ -625,6 +626,7 @@ textarea {
     width: 100%;
     gap: 2em;
     /*padding: 50px 100px 50px 100px;*/
+    margin: 140px 0 50px 0;
     padding: 50px 0 50px 0;
 }
 
@@ -632,6 +634,7 @@ textarea {
     #main__services--inner-container {
         max-width: 1200px;
         padding: 50px 100px 50px 100px;
+        margin: 0;
     }
 }
 
@@ -642,8 +645,8 @@ textarea {
     /*flex-grow: 0;*/
     /*flex-grow: 1;*/
     /*flex-shrink: 1;*/
-    padding: 2em 2em 2em 2em;
-    margin: 0 40px 0 40px;
+    padding: 4.5em 4.5em 4.5em 4.5em;
+    margin: 0 100px 0 100px;
     box-shadow: 0 20px 30px -10px var(--main-shadow-color-light);
     aspect-ratio: 1 / 1;
 }
@@ -654,17 +657,20 @@ textarea {
         height: 300px;
         flex-grow: 0;
         margin: 0;
+        padding: 2em 2em 2em 2em;
     }
 }
 
-.services--block > img {
-    width: 4em;
+.services__block--image {
+    width: 10em;
     margin: 1em 1em 0.5em 0;
 }
 
-/*.services__inner-container--row1 {*/
-/*    flex-shrink: 0;*/
-/*}*/
+@media screen and (min-width: 1200px){
+    .services__block--image {
+        width: 4em;
+    }
+}
 
 /* --------------- 4.5 Footer-Form------------------- */
 
