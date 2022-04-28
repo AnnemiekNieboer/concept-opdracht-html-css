@@ -6,23 +6,23 @@
 	<title>Rekupe - Digital Agency in LA</title>
 </head>
 <body>
-<header class="header___outer-container">
-	<div class="header___inner-container">
+<header class="header__outer-container">
+	<div class="header__inner-container">
 		<nav class="navigation">
-			<ul class="navigation___list">
-				<li><a class="navigation___link" href="#main__content-section">case studies</a></li>
-				<li><a class="navigation___link" href="#main__services--inner-container">services</a></li>
-				<li><a class="navigation___link" href="#footer__outer-container">contact us</a></li>
+			<ul class="navigation__list">
+				<li class="navigation__list-items"><a class="navigation___link" href="#main__content-section">case studies</a></li>
+				<li class="navigation__list-items"><a class="navigation___link" href="#main__services--inner-container">services</a></li>
+				<li class="navigation__list-items"><a class="navigation___link" href="#footer__outer-container">contact us</a></li>
 			</ul>
 		</nav>
-		<div class="header___hero-section">
+		<div class="header__hero-section">
 			<h1>your website is an investment in the success of your business</h1>
-			<p class="header___hero-section-paragraph">We are here to help you succeed.</p>
-			<a href="#">
+			<p class="header__hero-section-paragraph">We are here to help you succeed.</p>
+			<a href="#footer__outer-container">
 				<button class="main__cta-button">let's work together</button>
 			</a>
 		</div>
-		<div class="header___squiggle-line">
+		<div class="header__squiggle-line">
 			<img class="squiggle-line" src="/assets/img/squiggle_line_stripe.svg" alt="">
 		</div>
 	</div>
@@ -44,22 +44,22 @@
 					create new digital experiences.
 				</h2>
 				<p class="main__paragraph--cta-line">
-					Have a question? Click <a href="#">here</a> to contact us!
+					Have a question? <a href="#footer__outer-container">Click here</a> to contact us!
 				</p>
 			</div>
 		</section>
-		<!--	artikelen met afbeeldingen-->
+		<!-- Articles -->
 		<section id="main__content-section">
 			<article class="main__content-article">
 				<section class="main__content-article--block">
-					<h2>rolling stone</h2>
+					<h2 class="main__content-article--header">rolling stone</h2>
 					<img class="main__content-article--squiggle-line" src="assets/img/squiggle_line.svg"
 						 alt="squiggle line">
-					<p>
+					<p class="main__content-article--paragraph">
 						You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global
 						icon.
 					</p>
-					<a class="content-article--link" href="#">view project</a>
+					<a class="content-article--link" href="projects.html">view project</a>
 				</section>
 				<section class="main__content-article--image content-article__image1">
 					<img src="assets/img/work-image-01.jpeg" alt="rollingstone magazine">
@@ -67,14 +67,14 @@
 			</article>
 			<article class="main__content-article">
 				<section class="main__content-article--block content-article__block2">
-					<h2>variety</h2>
+					<h2 class="main__content-article--header">variety</h2>
 					<img class="main__content-article--squiggle-line" src="assets/img/squiggle_line.svg"
 						 alt="squiggle line">
-					<p>
+					<p class="main__content-article--paragraph">
 						Variety is an industry leader for breaking entertainment news, reviews and box office results
 						with archive of content dating back to 1905.
 					</p>
-					<a class="content-article--link" href="#">view project</a>
+					<a class="content-article--link" href="projects.html">view project</a>
 				</section>
 				<section class="main__content-article--image content-article__image2">
 					<img src="assets/img/work-image-02.jpeg" alt="rollingstone magazine">
@@ -82,13 +82,13 @@
 			</article>
 			<article class="main__content-article">
 				<section class="main__content-article--block">
-					<h2>Worth</h2>
+					<h2 class="main__content-article--header">Worth</h2>
 					<img class="main__content-article--squiggle-line" src="assets/img/squiggle_line.svg"
 						 alt="squiggle line">
-					<p>
+					<p class="main__content-article--paragraph">
 						A global media platform connecting a community that embraces worth beyond wealth.
 					</p>
-					<a class="content-article--link" href="#">view project</a>
+					<a class="content-article--link" href="projects.html">view project</a>
 				</section>
 				<section class="main__content-article--image content-article__image3">
 					<img src="assets/img/work-image-03.jpeg" alt="rollingstone magazine">
@@ -98,7 +98,7 @@
 		<!--	artikel met vakken-->
 		<section id="main__services--inner-container">
 			<article class="services--block services__inner-container--row1">
-				<img src="./assets/img/icon_web-design.svg" alt="web-design">
+				<img class="services__block--image" src="./assets/img/icon_web-design.svg" alt="web-design">
 				<h4>Web Design</h4>
 				<p class="services__block--paragraph">Good web design is how companies stand out from their competitors.
 					High quality web design leads to
@@ -106,7 +106,7 @@
 					launch websites and products that improve on their bottom line.</p>
 			</article>
 			<article class="services--block services__inner-container--row1">
-				<img src="./assets/img/icon_web-development.svg" alt="web-development">
+				<img class="services__block--image" src="./assets/img/icon_web-development.svg" alt="web-development">
 				<h4>Web Development</h4>
 				<p class="services__block--paragraph">Modern websites need to be responsive and fully functional at all
 					sizes. We develop all of our sites
@@ -114,7 +114,7 @@
 					Already have a design but need it developed? We’re here to help!</p>
 			</article>
 			<article class="services--block services__inner-container--row1">
-				<img src="./assets/img/icon_ux.svg" alt="user experience">
+				<img class="services__block--image" src="./assets/img/icon_ux.svg" alt="user experience">
 				<h4>User Experience</h4>
 				<p class="services__block--paragraph">In order to build successful products you have to understand the
 					user. We create user personas,
@@ -122,7 +122,7 @@
 					the product and can quickly eliminate potential risks – saving you time and money.</p>
 			</article>
 			<article class="services--block">
-				<img src="./assets/img/icon_graphic-design.svg" alt="graphic design">
+				<img class="services__block--image" src="./assets/img/icon_graphic-design.svg" alt="graphic design">
 				<h4>Logo Design + Branding</h4>
 				<p class="services__block--paragraph">Nike, Apple, Coca-Cola, Starbucks. What do all of these brands
 					have in common? Easily recognizable
@@ -131,7 +131,7 @@
 					identity and style guide for your company.</p>
 			</article>
 			<article class="services--block">
-				<img src="./assets/img/icon_seo.svg" alt="SEO">
+				<img class="services__block--image" src="./assets/img/icon_seo.svg" alt="SEO">
 				<h4>SEO</h4>
 				<p class="services__block--paragraph">Do you want your site to rank higher in search results? Google is
 					constantly changing their
@@ -139,7 +139,7 @@
 					your website it optimized, providing you the best opportunities for organic search exposure.</p>
 			</article>
 			<article class="services--block">
-				<img src="./assets/img/icon_copywriting.svg" alt="copywriting">
+				<img class="services__block--image" src="./assets/img/icon_copywriting.svg" alt="copywriting">
 				<h4>Copy Writing</h4>
 				<p class="services__block--paragraph">Brand messaging needs to be clear, direct and easy to understand
 					to be effective. A unique tone of
@@ -152,9 +152,9 @@
 <footer id="footer__outer-container">
 	<section class="footer__inner-container">
 		<section class="footer__form">
-			<h3>let's work together</h3>
+			<h3 class="footer__form--header">let's work together</h3>
 			<p class="footer__form--paragraph">Have a question? Need a quote? Let us know!</p>
-			<form class="footer__form--form" action="">
+			<form class="footer__form--form-section" action="">
 				<label class="form__input" for="name">
 					Name
 					<input class="form__input" type="text" id="name" placeholder="Name">
@@ -165,7 +165,7 @@
 				</label>
 				<label class="form__input" for="message">
 					Message
-					<textarea class="form__input" name="message" id="message" cols="30" rows="10"
+					<textarea class="form__input form__input--text-area" name="message" id="message" cols="30" rows="10"
 							  placeholder="Message"></textarea>
 				</label>
 				<input class="main__cta-button main__cta-button--footer" type="submit" value="send">
