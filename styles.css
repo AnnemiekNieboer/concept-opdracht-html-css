@@ -199,10 +199,13 @@ h4 {
 
 .main__outer-container {
     display: flex;
-    flex-direction: row;
+    /*let op hier row in column verandert voor de triangles!!!*/
+    flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    /*align-items: stretch;*/
     width: 100%;
+    /*let op hier position relative toegevoegd voor triangles!!!*/
+    position: relative;
 }
 
 .main__cta-button,
@@ -337,6 +340,7 @@ h4 {
     justify-content: center;
     align-items: center;
     height: 54vh;
+    background-color: var(--main-font-color-light);
 }
 
 .main__paragraph--about-section {
@@ -505,14 +509,14 @@ textarea {
 
 /* ------------------------------- 5. Bonus add-on features --------------------------------------- */
 
-/* --------------- 5.1 Pseudo elements ------------------- */
+/* --------------- 5.1 Pseudo elements-Text-items ------------------- */
 
 .main__about-section{
     position: relative;
 }
 
 .main__paragraph--about-section::before{
-    content: 'hello';
+    content: "hello";
     display: block;
     position: absolute;
     top: -40px;
@@ -524,12 +528,16 @@ textarea {
     z-index: -1;
 }
 
+.main__paragraph--about-section {
+    z-index: 2;
+}
+
 #main__content-section {
     position: relative;
 }
 
 .main__content-article--pseudo::before {
-    content: 'work';
+    content: "work";
     display: block;
     position: absolute;
     top: -40px;
@@ -550,7 +558,7 @@ textarea {
 }
 
 #main__services--inner-container::before{
-    content: 'services';
+    content: "services";
     display: block;
     position: absolute;
     top: -40px;
@@ -562,6 +570,32 @@ textarea {
     z-index: -1;
 }
 
+/* --------------- 5.1 Pseudo elements-Sqewed-triangles ------------------- */
+
+.header__outer-container::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 100vw solid black;
+    position: absolute;
+    align-self: flex-end;
+}
+
+#main__content-section::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 100vw solid black;
+    position: absolute;
+    top: -40px;
+    /*align-self: center;*/
+}
 
 /* ------------------------------- 6. Media Queries --------------------------------------- */
 
