@@ -602,6 +602,33 @@ textarea {
     top: 38px;
 }
 
+/* --------------- 5.1 Pseudo elements-Animated-link-lines ------------------- */
+
+
+.content-article--link::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--main-focus-color);
+    margin-left: 1em;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px){
+    .content-article--link::after {
+        width: 15px;
+        height: 1px;
+        margin-bottom: 3px;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .content-article--link:hover::after{
+        width: 60px;
+    }
+}
+
+
 /* ------------------------------- 6. Media Queries --------------------------------------- */
 
 @media screen and (min-width: 1200px){
