@@ -536,7 +536,7 @@ textarea {
     position: relative;
 }
 
-.main__content-article--pseudo::before {
+.main__content-article--pseudo::after {
     content: "work";
     display: block;
     position: absolute;
@@ -572,30 +572,65 @@ textarea {
 
 /* --------------- 5.1 Pseudo elements-Sqewed-triangles ------------------- */
 
-.header__outer-container::after {
+.header--pseudo-skew::after,
+.main__content-section--pseudo-skew::before,
+.services__inner-container--pseudo-skew::before {
     content: "";
     display: block;
     width: 0;
     height: 0;
     border-top: 2.5em solid transparent;
     border-bottom: 0 solid transparent;
-    border-left: 100vw solid black;
-    position: absolute;
-    align-self: flex-end;
+    position: relative;
 }
 
-#main__content-section::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 2.5em solid transparent;
-    border-bottom: 0 solid transparent;
-    border-right: 100vw solid black;
-    position: absolute;
-    top: -40px;
-    /*align-self: center;*/
+.header--pseudo-skew::after,
+.services__inner-container--pseudo-skew::before {
+    border-left: 100vw solid black;
+    top: -39px;
 }
+
+.main__content-section--pseudo-skew::before {
+    border-right: 100vw solid black;
+}
+
+
+/*.header--pseudo-skew::after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-top: 2.5em solid transparent;*/
+/*    border-bottom: 0 solid transparent;*/
+/*    border-left: 100vw solid black;*/
+/*    position: relative;*/
+/*    top: -39px;*/
+/*}*/
+
+/*.main__content-section--pseudo-skew::before {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-top: 2.5em solid transparent;*/
+/*    border-bottom: 0 solid transparent;*/
+/*    border-right: 100vw solid black;*/
+/*    position: relative;*/
+/*}*/
+
+/*.services__inner-container--pseudo-skew::before {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-top: 2.5em solid transparent;*/
+/*    border-bottom: 0 solid transparent;*/
+/*    border-left: 100vw solid black;*/
+/*    top: -39px;*/
+/*    position: relative;*/
+/*}*/
+
+
 
 /* ------------------------------- 6. Media Queries --------------------------------------- */
 
@@ -706,11 +741,12 @@ textarea {
         margin: 0;
     }
     /*---4.5 Main-Articles-section ---*/
-    #main__content-section {
-        max-width: 1200px;
-    }
+    /*#main__content-section {*/
+    /*    max-width: 1200px;*/
+    /*}*/
     .main__content-article {
         height: 500px;
+        max-width: 1200px;
     }
     .main__content-article--block {
         margin: 110px 140px 80px 50px;
@@ -745,7 +781,7 @@ textarea {
     }
     /*---4.6 Main-Services-section ---*/
     #main__services--inner-container {
-        max-width: 1200px;
+        /*max-width: 1200px;*/
         padding: 50px 100px 50px 100px;
         margin: 0;
     }
