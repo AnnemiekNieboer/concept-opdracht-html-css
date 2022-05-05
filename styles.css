@@ -574,7 +574,8 @@ textarea {
 
 .header--pseudo-skew::after,
 .main__content-section--pseudo-skew::before,
-.services__inner-container--pseudo-skew::before {
+.services__inner-container--pseudo-skew::before,
+.footer-section--pseudo-skew::before {
     content: "";
     display: block;
     width: 0;
@@ -585,52 +586,21 @@ textarea {
 }
 
 .header--pseudo-skew::after,
-.services__inner-container--pseudo-skew::before {
-    border-left: 100vw solid black;
-    top: -39px;
+.services__inner-container--pseudo-skew::before,
+.footer-section--pseudo-skew::before {
+    border-left: 100vw solid var(--main-font-color-light);
+    top: -38px;
 }
 
 .main__content-section--pseudo-skew::before {
-    border-right: 100vw solid black;
+    border-right: 100vw solid var(--main-background-color-darker);
 }
 
-
-/*.header--pseudo-skew::after {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-top: 2.5em solid transparent;*/
-/*    border-bottom: 0 solid transparent;*/
-/*    border-left: 100vw solid black;*/
-/*    position: relative;*/
-/*    top: -39px;*/
-/*}*/
-
-/*.main__content-section--pseudo-skew::before {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-top: 2.5em solid transparent;*/
-/*    border-bottom: 0 solid transparent;*/
-/*    border-right: 100vw solid black;*/
-/*    position: relative;*/
-/*}*/
-
-/*.services__inner-container--pseudo-skew::before {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-top: 2.5em solid transparent;*/
-/*    border-bottom: 0 solid transparent;*/
-/*    border-left: 100vw solid black;*/
-/*    top: -39px;*/
-/*    position: relative;*/
-/*}*/
-
-
+.footer-section--pseudo-skew::before {
+    border-top: 0 solid transparent;
+    border-bottom: 2.5em solid transparent;
+    top: 38px;
+}
 
 /* ------------------------------- 6. Media Queries --------------------------------------- */
 
@@ -741,9 +711,6 @@ textarea {
         margin: 0;
     }
     /*---4.5 Main-Articles-section ---*/
-    /*#main__content-section {*/
-    /*    max-width: 1200px;*/
-    /*}*/
     .main__content-article {
         height: 500px;
         max-width: 1200px;
@@ -781,7 +748,7 @@ textarea {
     }
     /*---4.6 Main-Services-section ---*/
     #main__services--inner-container {
-        /*max-width: 1200px;*/
+        max-width: 1200px;
         padding: 50px 100px 50px 100px;
         margin: 0;
     }
