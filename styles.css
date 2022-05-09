@@ -416,11 +416,6 @@ h4 {
     box-shadow: 0 20px 30px -10px var(--main-shadow-color);
 }
 
-.main__content-article--squiggle-line {
-    margin: 50px 0 80px 0;
-    width: 110px;
-}
-
 /* --------------- 4.6 Main-Services------------------- */
 
 #main__services--inner-container {
@@ -510,12 +505,6 @@ textarea {
     width: 100%;
     background-color: var(--main-font-color-dark);
     height: 8em;
-}
-
-/* --------------- 4.8b Projects page-Footer-Copyright-section------------------- */
-
-.projects__copyright {
-    height: 2vh;
 }
 
 /* ------------------------------- 5. Bonus add-on features --------------------------------------- */
@@ -632,11 +621,27 @@ textarea {
     margin-left: 1em;
     align-self: center;
 }
-/* --------------- 5.4 Grain on gradient ------------------- */
+
+/* --------------- 5.4 Pseudo element squiggle line ------------------- */
+
+.main__content-article--pseudo-item-squiggle-line::before {
+    content: "";
+    display: block;
+    background-image: url("assets/img/squiggle_line.svg");
+    margin: 50px 0 80px 0;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* --------------- 5.5 Grain on gradient ------------------- */
 
 
 .header__outer-container::after,
-#footer__outer-container::after {
+#footer__outer-container::after,
+.projects__header--outer-container::after {
     content: "";
     display: block;
     width: 100vw;
@@ -650,6 +655,12 @@ textarea {
 #footer__outer-container::after {
     height: 90vh;
 }
+
+.projects__header--outer-container::after {
+    height: 98vh;
+}
+
+
 
 /* --------------- 5.5 Bonus-add-ons-Media Queries ------------------- */
 
@@ -668,7 +679,12 @@ textarea {
     .content-article--link:hover::after{
         width: 60px;
     }
-    /*--------------- 5.4 Grain on gradient ---------------*/
+    /*--------------- 5.4 Pseudo element squiggle line ---------------*/
+    .main__content-article--pseudo-item-squiggle-line::before {
+        background-size: 60%;
+        margin: 30px 0 20px 0;
+    }
+    /*--------------- 5.5 Grain on gradient ---------------*/
     .header__outer-container::after {
         height: 550px;
     }
@@ -823,10 +839,7 @@ textarea {
         margin-right: 10px;
         order: 1;
     }
-    .main__content-article--squiggle-line {
-        margin: 20px 0 40px 0;
-        width: 58px;
-    }
+
     /*---4.6 Main-Services-section ---*/
     #main__services--inner-container {
         max-width: 1200px;
